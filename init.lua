@@ -1,6 +1,8 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
+vim.o.guifont = 'JetBrains Mono:12'
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
@@ -22,8 +24,8 @@ require("lazy").setup({
     import = "nvchad.plugins",
   },
 
-  { 
-    import = "plugins" 
+  {
+    import = "plugins"
   },
 
   {
